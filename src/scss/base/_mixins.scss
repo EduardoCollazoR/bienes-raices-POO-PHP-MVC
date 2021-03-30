@@ -34,9 +34,11 @@
     text-align: center;
     transition: all 0.2s ease-in;
     border: none;
+    border-radius: .5rem;
 
     &:hover {
         background-color: darken($bgColor, 5);
         cursor: pointer;
     }
+    
 }
