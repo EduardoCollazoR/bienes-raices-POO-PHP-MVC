@@ -1,4 +1,4 @@
-<main class="contenedor seccion contenido-centrado">
+<main class="contenedor seccion contenido-centrado-login">
     <h1>Iniciar Sesion</h1>
 
     <?php
@@ -9,16 +9,16 @@
     <?php endforeach; ?>
 
     <form class="formulario" method="POST" action="/login">
-        <fieldset>
-            <legend>Correo Electronico y Password</legend>
 
 
-            <label for="correo">Correo Electronico</label>
-            <input type="email" placeholder="Correo Electronico" id="correo" name="email" required />
-            <label for="password">Contraseña</label>
-            <input type="password" placeholder="Contraseña" id="password" name="password" required />
 
-        </fieldset>
+
+        <label for="correo">Correo Electronico</label>
+        <input type="email" placeholder="Correo Electronico" id="correo" name="email" required />
+        <label for="password">Contraseña</label>
+        <input type="password" placeholder="Contraseña" id="password" name="password" required />
+
+
         <input type="submit" name="" value="Iniciar Sesion" class="boton boton-verde">
     </form>
 </main>

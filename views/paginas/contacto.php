@@ -1,4 +1,4 @@
-<main class="contenedor seccion">
+<main class="contenedor seccion contenido-centrado-contacto ">
     <h1>Contacto</h1>
 
     <?php if ($mensaje) { ?>
@@ -7,16 +7,16 @@
 
     <?php  } ?>
     <picture>
-        <source srcset="build/img/destacada3.webp" type="image/webp" />
+        <source srcset=" build/img/destacada3.webp" type="image/webp" />
         <source srcset="build/img/destacada3.jpg" type="image/jpg" />
         <img src="build/img/destacada3.jpg" alt="anuncio2" loading="lazy" />
     </picture>
 
     <h2>Llene el Formulario de Contacto</h2>
-    <form action="/contacto" method="POST" class="formulario">
+    <form action="/contacto" method="POST" class="formulario ">
         <fieldset>
             <legend>Informacion Personal</legend>
-            <label for="nombre">Nombre</label>
+            <label for=" nombre">Nombre</label>
             <input type="text" placeholder="Nombre" id="nombre" name="contacto[nombre]" required />
 
             <label for="mensaje">Mensaje</label>

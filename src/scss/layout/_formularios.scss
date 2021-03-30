@@ -1,4 +1,8 @@
 .formulario {
+    fieldset {
+        border: 0;
+    }
+
     p {
         font-size: 1.4rem;
         color: $grisOscuro;
@@ -26,6 +30,11 @@
         border: 1px solid $gris;
         border-radius: 1rem;
         margin-bottom: 2rem;
+        outline: none;
+
+        &:focus {
+            border: 1px solid $amarillo;
+        }
     }
 
     textarea {
@@ -43,5 +52,13 @@
     input[type="radio"] {
         margin: 0;
         width: auto;
+        appearance: none;
+        border: 1px solid $gris;
+        background-color: $blanco;
+        border-radius: 10%;
+
+        &:checked {
+            background-color: $amarillo;
+        }
     }
 }
