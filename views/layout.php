@@ -26,7 +26,7 @@ if (!isset($inicio)) {
     <header class="header  <?php echo $inicio ? 'inicio' : '' ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="index.php">
+                <a href="/">
                     <img src="/build/img/logo.svg" alt="logo" />
                 </a>
                 <div class="mobile-menu">
@@ -42,7 +42,7 @@ if (!isset($inicio)) {
                         <a href="/contacto">Contacto</a>
 
                         <?php if ($auth) : ?>
-                            <a href="/cerrar-sesion">Cerrar Sesion</a>
+                            <a href="/logout">Cerrar Sesion</a>
                         <?php endif; ?>
                     </nav>
                 </div>
