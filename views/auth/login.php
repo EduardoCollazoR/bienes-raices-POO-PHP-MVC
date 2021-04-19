@@ -1,15 +1,12 @@
 <main class="contenedor seccion contenido-centrado-login">
-    <h1>Iniciar Sesion</h1>
+    <h1 data-cy="heading-login">Iniciar Sesion</h1>
 
     <?php
     foreach ($errores as $error) : ?>
-        <div class="alerta error close">
-            <?php echo $error ?>
-
-        </div>
+        <div data-cy="alerta-login" class="alerta error close"><?php echo $error ?></div>
     <?php endforeach; ?>
 
-    <form class="formulario" method="POST" action="/login">
+    <form data-cy="formulario-login" class="formulario" method="POST" action="/login">
 
 
 

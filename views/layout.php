@@ -35,7 +35,7 @@ if (!isset($inicio)) {
 
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="icono darkmode" />
-                    <nav class="navegacion">
+                    <nav class="navegacion" data-cy="navegacion-header">
                         <a href="/nosotros">Nosotros</a>
                         <a href="/propiedades">Propiedades</a>
                         <a href="/blog">Blog</a>
@@ -49,7 +49,7 @@ if (!isset($inicio)) {
             </div>
             <!-- cierre barra-->
             <?php
-            echo $inicio ? "<h1>Venta de Casa y Departamentos de Lujo y Exclusivos</h1>" : '';
+            echo $inicio ? "<h1 data-cy='heading-sitio'>Venta de Casa y Departamentos de Lujo y Exclusivos</h1>" : '';
 
             ?>
         </div>
@@ -59,7 +59,7 @@ if (!isset($inicio)) {
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+            <nav class="navegacion" data-cy="navegacion-footer">
                 <a href="/nosotros">Nosotros</a>
                 <a href="/propiedades">Propiedades</a>
                 <a href="/blog">Blog</a>
@@ -68,7 +68,7 @@ if (!isset($inicio)) {
         </div>
 
 
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
+        <p class="copyright" data-cy="copyright">Todos los derechos Reservados <?php echo date('Y'); ?> &copy;</p>
     </footer>
     <script src="../build/js/bundle.min.js"></script>
 </body>
