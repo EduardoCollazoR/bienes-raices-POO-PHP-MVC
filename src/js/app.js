@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   eventListener();
   darkMode();
 });
@@ -12,16 +12,16 @@ function darkMode() {
     document.body.classList.remove("dark-mode");
   }
 
-  prefiereDarkMode.addEventListener("change", function () {
+  prefiereDarkMode.addEventListener("change", function() {
     if (prefiereDarkMode.matches) {
       document.body.classList.add("dark-mode");
     } else {
       document.body.classList.remove("dark-mode");
     }
   });
-  const botonDarlMode = document.querySelector(".dark-mode-boton");
+  const botonDarkMode = document.querySelector(".dark-mode-boton");
 
-  botonDarlMode.addEventListener("click", function () {
+  botonDarkMode.addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
   });
 }
@@ -51,17 +51,17 @@ function mostrarMetodos(e) {
   if (e.target.value === "telefono") {
     contactoDiv.innerHTML = `
     <label for="tel">Numero Telefono</label>
-            <input type="tel" placeholder="Telefono" id="tel" name="contacto[telefono]" />
+            <input data-cy="input-telefono" type="tel" placeholder="Telefono" id="tel" name="contacto[telefono]" />
             <p>Elija la fecha y hora para la llamada</p>
             <label for="fecha">Fecha</label>
-            <input type="date" placeholder="Fecha" id="fecha" name="contacto[fecha]" />
+            <input data-cy="input-fecha" type="date" placeholder="Fecha" id="fecha" name="contacto[fecha]" />
             <label for="hora">Hora</label>
-            <input type="time" placeholder="Hora" id="hora" min="09:00" max="18:00" name="contacto[hora]" />
+            <input data-cy="input-hora" type="time" placeholder="Hora" id="hora" min="09:00" max="18:00" name="contacto[hora]" />
     `;
   } else {
     contactoDiv.innerHTML = `
     <label for="correo">Correo Electronico</label>
-    <input type="email" placeholder="Correo Electronico" id="correo" name="contacto[email]" required />
+    <input data-cy="input-email" type="email" placeholder="Correo Electronico" id="correo" name="contacto[email]" required />
     `;
   }
 }

@@ -38,8 +38,6 @@ class PaginasControllers
         ]);
     }
 
-
-
     public static function blog(Router $router)
     {
         $router->render('paginas/blog', []);
@@ -68,7 +66,7 @@ class PaginasControllers
             //configurar el contenido del mail
             $mail->setFrom('admin@bienesraices.com');
             $mail->addAddress('admin@bienesraices.com', 'Bienes Raices');
-            $mail->Subject = 'Tienesun nuevo Mensaje';
+            $mail->Subject = 'Tienes un nuevo Mensaje';
 
             //habilitar html
             $mail->isHTML(true);
@@ -105,9 +103,9 @@ class PaginasControllers
 
             //enviar el email
             if ($mail->send()) {
-                $mensaje = "Mensaje enviado Correctamente";
+                $mensaje = "Mensaje Enviado Correctamente";
             } else {
-                $mensaje = "El Mensaje  no se envio..";
+                $mensaje = "El Mensaje  no se envio...";
             }
         }
         $router->render('paginas/contacto', [
